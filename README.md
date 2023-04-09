@@ -4,8 +4,10 @@ Simple on the fly customisable welcome message.
 <img src="https://github.com/skyss0fly/WelcomeMessage/blob/main/Icon.png"></img>
 </p> <p></p>
 :) <p></p>
-# Instructions:
-- go to plugindata -> WelcomeMessage -> config.yml and edit arguments
+<p><b>Instructions:</b></p>
+<p> - 1 go to plugindata </p><p></p>
+<p> - 2 WelcomeMessage </p><p></p>
+<p> config.yml and edit arguments</p><p></p>
 
 ### TODO
 - add {player} arguments so it says yourprefix: Welcome yourusername to  yourservername!
