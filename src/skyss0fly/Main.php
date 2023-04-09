@@ -11,10 +11,10 @@ class Main extends PluginBase {
 
 
 public function onEnable() {
-$this->getLogger()info()->("Welcome message has loaded.");
+	$this->getLogger()->info(TextFormat::MINECOIN_GOLD . "Welcome Message Has Successfully loaded");
 }
 
 public function PlayerJoin() ::void {
-$this->getLogger()info()->("Player has joined.");
+$this->getLogger()->info(TextFormat::MINECOIN_GOLD . "player has joined!");
 $this->getServer(->broadcastMessage("Welcome to" . $config this-> new(Servername)"!");
 }
