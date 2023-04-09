@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener {
         $player = $event->getPlayer();
         $serverName = $this->getConfig()->get("ServerName");
         $prefix = $this->getConfig()->get("Prefix");
-        $message = $prefix . ": Welcome to " . $serverName;
+        $message = $prefix . $player . ": Welcome to " . $serverName;
         $this->getServer()->broadcastMessage($message);
     }
 }
