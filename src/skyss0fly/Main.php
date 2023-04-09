@@ -1,25 +1,24 @@
 <?php
+
 namespace skyss0fly\WelcomeMessage;
-use resources\CustomConfig;
 
 use pocketmine\plugin\PluginBase;
+use pocketmine\event\Listener;
+use pocketmine\event\player\PlayerJoinEvent;
 
-class Main extends PluginBase {
+class Main extends PluginBase implements Listener {
 
+    public function onEnable() {
+        $this->getLogger()->info("Welcome Message plugin has been enabled");
+        $this->saveDefaultConfig();
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+    }
 
-
-
-
-
-public function onEnable() {
-	$this->getLogger()->info("Welcome Message Has Successfully loaded");
-	$this->saveDefaultConfig()
-$this->getConfig()->get("ServerName")
-$this->getConfig()->get("Prefix")
-}
-
-public function PlayerJoin() {
-$this->getLogger()->info("player has joined!");
-$this->getServer()->broadcastMessage($Prefix . ": Welcome to " . $ServerName);
-}
+    public function onPlayerJoin(PlayerJoinEvent $event) {
+        $player = $event->getPlayer();
+        $serverName = $this->getConfig()->get("ServerName");
+        $prefix = $this->getConfig()->get("Prefix");
+        $message = $prefix . ": Welcome to " . $serverName;
+        $this->getServer()->broadcastMessage($message);
+    }
 }
