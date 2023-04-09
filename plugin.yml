@@ -1,5 +1,5 @@
-Name: WelcomeMessage
-Main: skyss0fly/Main
-API: 4.18.3
-Version: 0.0.1
+name: WelcomeMessage
+main: skyss0fly/Main
+version: 0.1
+api: 4.18.3
 Author: skyss0fly
