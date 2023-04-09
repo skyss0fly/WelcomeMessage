@@ -20,7 +20,7 @@ class Main extends PluginBase implements Listener {
         $message = $this->getConfig()->get("Message");
         $message = str_replace("{player}", $player->getName(), $message);
         $message = str_replace("&", "§", $message);
-        $message = $prefix . ": " . $color . $message;
+        $message = $prefix . ": " . $message;
         $this->getServer()->broadcastMessage($message);
     }
 }
