@@ -14,7 +14,7 @@ public function onEnable() {
 	$this->getLogger()->info(TextFormat::MINECOIN_GOLD . "Welcome Message Has Successfully loaded");
 }
 
-public function PlayerJoin() ::void {
+public function PlayerJoin() {
 $this->getLogger()->info(TextFormat::MINECOIN_GOLD . "player has joined!");
 $this->getServer(->broadcastMessage("Welcome to" . $config this-> new(Servername)"!");
 }
