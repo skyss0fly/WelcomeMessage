@@ -1,6 +1,6 @@
 <?php
 namespace skyss0fly\WelcomeMessage;
-use resources\config;
+use resources\CustomConfig;
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginBase;
 
@@ -13,7 +13,7 @@ class Main extends PluginBase {
 
 public function onEnable() {
 	$this->getLogger()->info(TextFormat::MINECOIN_GOLD . "Welcome Message Has Successfully loaded");
-    Sthis->config = new CustomConfig (new Config(Sthis->getDataFolder () . "config.yml"
+    Sthis->config = new CustomConfig (new CustomConfig(Sthis->getDataFolder () . "config.yml"
 Config:: YAML)) ;
 }
 
