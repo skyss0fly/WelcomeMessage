@@ -1,5 +1,5 @@
 # WelcomeMessage
-Simple but customisable message
+Simple on the fly customisable welcome message.
 
 # Instructions:
 - go to plugindata -> WelcomeMessage -> config.yml and edit arguments
