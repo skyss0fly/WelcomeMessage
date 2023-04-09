@@ -12,7 +12,8 @@ Simple on the fly customisable welcome message.
 ### TODO
 - add {player} arguments so it says yourprefix: Welcome yourusername to  yourservername!
 
-
+## API COMPATIBLE:
+- 4.18.3
 thanks to the following for helping me construct this plugin:
 - SOFe
 - Inaa
