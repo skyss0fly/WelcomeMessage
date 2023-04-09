@@ -20,3 +20,4 @@ public function PlayerJoin() {
 $this->getLogger()->info(TextFormat::MINECOIN_GOLD . "player has joined!");
 $this->getServer(broadcastMessage("Welcome to" . $config::SERVERNAME));
 }
+}
