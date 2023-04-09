@@ -18,6 +18,6 @@ public function onEnable() {
 
 public function PlayerJoin() {
 $this->getLogger()->info("player has joined!");
-$this->getServer()->broadcastMessage("Welcome to" . $config::SERVERNAME));
+$this->getServer()->broadcastMessage("Welcome to" . $config::SERVERNAME);
 }
 }
