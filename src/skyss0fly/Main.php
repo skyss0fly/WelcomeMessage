@@ -5,6 +5,7 @@ namespace skyss0fly\WelcomeMessage;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\utils\Config;
 
 class Main extends PluginBase implements Listener {
 
