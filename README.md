@@ -1,6 +1,6 @@
 # WelcomeMessage
 Simple on the fly customisable welcome message.
-
+[img]https://github.com/skyss0dly/WelcomeMessage/Icon.png[/img]
 # Instructions:
 - go to plugindata -> WelcomeMessage -> config.yml and edit arguments
 
