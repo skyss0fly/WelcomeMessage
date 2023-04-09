@@ -5,7 +5,7 @@ namespace skyss0fly;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
-
+use pocketmine\player;
 class Main extends PluginBase implements Listener {
 
     public function onEnable(): void {
@@ -16,9 +16,10 @@ class Main extends PluginBase implements Listener {
 
     public function onPlayerJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
+        $plrname = $this->getDisplayName()
         $serverName = $this->getConfig()->get("ServerName");
         $prefix = $this->getConfig()->get("Prefix");
-        $message = $prefix . $player . ": Welcome to " . $serverName;
+        $message = $prefix . $plrname . ": Welcome to " . $serverName;
         $this->getServer()->broadcastMessage($message);
     }
 }
