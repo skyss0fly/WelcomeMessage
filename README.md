@@ -13,7 +13,7 @@ Simple on the fly customisable welcome message.
 - None, You should suggest some!
 
 ## API COMPATIBLE:
-- 4.18.3
+- 4.X.X
 
  # thanks to the following for helping me construct this plugin:
 - SOFe
