@@ -13,6 +13,7 @@ class Main extends PluginBase {
 
 public function onEnable() {
 	$this->getLogger()->info("Welcome Message Has Successfully loaded");
+	$this->saveDefaultConfig()
 $this->getConfig()->get("ServerName")
 $this->getConfig()->get("Prefix")
 }
