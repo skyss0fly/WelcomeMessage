@@ -20,6 +20,6 @@ $this->getConfig()->get("Prefix")
 
 public function PlayerJoin() {
 $this->getLogger()->info("player has joined!");
-$this->getServer()->broadcastMessage($Prefix . ": Welcome to" . $ServerName);
+$this->getServer()->broadcastMessage($Prefix . ": Welcome to " . $ServerName);
 }
 }
