@@ -13,7 +13,7 @@ class Main extends PluginBase {
 
 public function onEnable() {
 	$this->getLogger()->info("Welcome Message Has Successfully loaded");
-
+$this->getConfig()->get("CustomConfig")
 }
 
 public function PlayerJoin() {
