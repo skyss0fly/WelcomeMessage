@@ -1,9 +1,5 @@
 name: WelcomeMessage
-main: skyss0fly\Main
+main: skyss0fly\welcomemessage\Main
 version: 1.5
 api: 4.0.0
-Author: 
-- skyss0fly (Creator)
-- SOFe (Contributor)
-- RuzBenzy (Contributor)
-- Inaa (Collaborator)
+Author: ["skyss0fly", "Inaayat"]
