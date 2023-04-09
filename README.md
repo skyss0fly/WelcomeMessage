@@ -10,7 +10,7 @@ Simple on the fly customisable welcome message.
 <p><b> - 3 </b>config.yml and edit arguments</p><p></p>
 
 ### TODO
-- add {player} arguments so it says yourprefix: Welcome yourusername to  yourservername!
+- None
 
 ## API COMPATIBLE:
 - 4.18.3
