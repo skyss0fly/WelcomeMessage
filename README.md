@@ -16,4 +16,4 @@ Simple on the fly customisable welcome message.
 thanks to the following for helping me construct this plugin:
 - SOFe
 - Inaa
-- RuzBenzy
+- RuzBenzy (kinda, just gave like 1 suggestion)
