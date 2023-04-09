@@ -2,4 +2,5 @@ name: WelcomeMessage
 main: skyss0fly\welcomemessage\Main
 version: 1.5
 api: 4.0.0
-Author: ["skyss0fly", "Inaayat"]
+author: ["skyss0fly", "Inaayat"]
+description: A simple welcome message plugin thats customizable
