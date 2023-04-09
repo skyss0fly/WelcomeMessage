@@ -13,7 +13,8 @@ class Main extends PluginBase {
 
 public function onEnable() {
 	$this->getLogger()->info("Welcome Message Has Successfully loaded");
-$this->getConfig()->get("servername")
+$this->getConfig()->get("ServerName")
+$this->getConfig()->get("Prefix")
 }
 
 public function PlayerJoin() {
