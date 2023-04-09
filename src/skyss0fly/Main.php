@@ -1,5 +1,6 @@
 <?php
 namespace skyss0fly\WelcomeMessage;
+use skyss0fly\resources\config;
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginBase;
 
