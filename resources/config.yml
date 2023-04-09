@@ -2,4 +2,5 @@
 
 ServerName: "Name"
 
-Prefix: "&l&o&cName"
+# when usinf colour text use § otherwise doesnt work
+Prefix: "§l§o§cName"
