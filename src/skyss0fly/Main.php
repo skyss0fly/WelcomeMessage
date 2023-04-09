@@ -16,5 +16,5 @@ public function onEnable() {
 
 public function PlayerJoin() {
 $this->getLogger()->info(TextFormat::MINECOIN_GOLD . "player has joined!");
-$this->getServer(->broadcastMessage("Welcome to" . $config new(Servername)"!");
+$this->getServer(broadcastMessage("Welcome to" . $config new(Servername)"!");
 }
