@@ -1,7 +1,5 @@
 #config
 
-ServerName: 
-- "Name"
+ServerName: "Name"
 
-Prefix:
-- "&l&o&cName"
+Prefix: "&l&o&cName"
