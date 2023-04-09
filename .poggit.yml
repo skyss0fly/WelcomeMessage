@@ -3,6 +3,7 @@ build-by-default: true
 branches:
 - main
 projects:
+ welcome:
   WelcomeMessage:
     path: ""
 ...
