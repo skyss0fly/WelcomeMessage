@@ -4,12 +4,17 @@ use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase {
-public function onEnable() ::void {
 
-$this->getLogger()info->()("Welcome Message Has Loaded ");
+
+
+
+
+
+public function onEnable() {
+$this->getLogger()info()->("Welcome message has loaded.");
 }
 }
-public function PlayerJoin() ::void {
-$this->getServer(->broadcastMessage("Welcome to" . $config this-> new(Servername) "!";
+public function PlayerJoin() {
 $this->getLogger()info()->("Player has joined.");
+$this->getServer(->broadcastMessage("Welcome to" . $config this-> new(Servername)"!");
 }
