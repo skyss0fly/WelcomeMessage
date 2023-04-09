@@ -1,6 +1,7 @@
 #config
 
-ServerName: "Name"
+# Use {player} for the player name
+# Use & for color
 
-# when usinf colour text use § otherwise doesnt work
-Prefix: "§l§o§cName"
+Prefix: "&l&o&cName"
+Message: "&aWelcome to our server, {player}! &cWe hope you enjoy your stay at"
