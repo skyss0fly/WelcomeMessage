@@ -14,7 +14,7 @@ class Main extends PluginBase {
 public function onEnable() {
 	$this->getLogger()->info(TextFormat::MINECOIN_GOLD . "Welcome Message Has Successfully loaded");
     Sthis->config = new CustomConfig (new CustomConfig(Sthis->getDataFolder () . "config.yml"
-Config:: YAML)) ;
+CustomConfig:: YAML)) ;
 }
 
 public function PlayerJoin() {
