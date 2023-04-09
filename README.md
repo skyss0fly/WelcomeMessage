@@ -3,7 +3,8 @@ Simple on the fly customisable welcome message.
 <p align="center">
 <img src="https://github.com/skyss0fly/WelcomeMessage/blob/main/Icon.png"></img>
 </p>
-## Instructions:
+:) 
+# Instructions:
 - go to plugindata -> WelcomeMessage -> config.yml and edit arguments
 
 ### TODO
