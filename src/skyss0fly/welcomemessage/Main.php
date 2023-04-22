@@ -15,12 +15,13 @@ class Main extends PluginBase implements Listener {
 
     public function onPlayerJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
+        $servername = $this->getConfig()->get("ServerName");
         $prefix = $this->getConfig()->get("Prefix");
         $message = $this->getConfig()->get("Message");
         $message = str_replace("{player}", $player->getName(), $message);
         $prefix = str_replace("&", "§", $prefix);
         $message = str_replace("&", "§", $message);
-        $message = $prefix . ": " . $message;
+        $message = $prefix . ": " . $message . $servername;
         $this->getServer()->broadcastMessage($message);
     }
 }
