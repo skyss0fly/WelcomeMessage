@@ -16,6 +16,6 @@ Simple on the fly customisable welcome message.
 - 4.X.X
 
  # thanks to the following for helping me construct this plugin:
-- <a href="https://github.com/SOFe">SOFe</a>
-- Inaa
+- <a href="https://github.com/SOF3">SOFe</a>
+- <a href="https://github.com/Inaa">Inaayat</a>
 - RuzBenzy (kinda, just gave like 1 suggestion)
