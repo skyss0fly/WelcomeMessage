@@ -8,6 +8,7 @@ Simple on the fly customisable welcome message.
 <p><b> - 1</b> go to plugindata </p><p></p>
 <p> <b>- 2 </b>WelcomeMessage </p><p></p>
 <p><b> - 3 </b>config.yml and edit arguments</p><p></p>
+<p><b> - 4</b> join the game </p><p></p>
 
 ### TODO
 - None, You should suggest some!
