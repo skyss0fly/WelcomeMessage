@@ -12,3 +12,6 @@ ServerName: "&cName"
 BroadcastToServer: true
 
 formmode: false
+Form-Title: "§aWelcome!"
+Submit-Msg: "Submit"
+Form-Content: "Welcome"
