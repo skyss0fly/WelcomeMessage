@@ -45,8 +45,6 @@ elseif ($broadcasttoserver === false and $formmode === false {
     $player->sendMessage($message);
 }
 else {
- ```php
-public function onJoin(PlayerJoinEvent $event){
         $player = $event->getPlayer();
 
         $joinform = new SimpleForm(function (Player $player, $data){
@@ -67,7 +65,5 @@ public function onJoin(PlayerJoinEvent $event){
         $joinform->setContent($formcontent);
         $joinform->addButton("§d§lSumbit");
         $player->sendForm($joinform);
-    }
-```
     }
 }
