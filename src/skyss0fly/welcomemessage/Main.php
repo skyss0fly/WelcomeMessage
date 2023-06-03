@@ -24,8 +24,6 @@ const CONFIG_VERSION = 1;
             rename($this->getDataFolder() . 'config.yml', $this->getDataFolder() . 'config-' . $config_version . '.yml');
             $this->saveResource('config.yml');
         }
-  }
-}
     public function onPlayerJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
         $servername = $this->getConfig()->get("ServerName");
@@ -66,4 +64,5 @@ else {
         $joinform->addButton("§d§lSumbit");
         $player->sendForm($joinform);
     }
+}
 }
