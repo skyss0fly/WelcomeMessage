@@ -45,6 +45,29 @@ elseif ($broadcasttoserver === false and $formmode === false {
     $player->sendMessage($message);
 }
 else {
- //* form stuff here
+ ```php
+public function onJoin(PlayerJoinEvent $event){
+        $player = $event->getPlayer();
+
+        $joinform = new SimpleForm(function (Player $player, $data){
+            $result = $data;
+            if ($result !== null) {
+                switch ($result) {
+                    case 0:
+                    $sumbitmsg = $this->config->get("Sumbit-Msg");
+                    $player->sendMessage(self::PREFIX . $sumbitmsg);
+                    break;
+                }
+            }
+        });
+        $formtitle = $this->config->get("Form-Title");
+        $formcontent = $this->config->get("Form-Content");
+        
+        $joinform->setTitle($formtitle);
+        $joinform->setContent($formcontent);
+        $joinform->addButton("§d§lSumbit");
+        $player->sendForm($joinform);
+    }
+```
     }
 }
