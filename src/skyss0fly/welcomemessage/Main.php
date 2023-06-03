@@ -28,7 +28,7 @@ if ($broadcasttoserver === true) {
         $this->getServer()->broadcastMessage($message);
 }
 else {
-    $this->getServer()->whisper($player, $message);
+    $player->sendMessage($message);
 }
     }
 }
