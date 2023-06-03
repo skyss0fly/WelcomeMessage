@@ -22,14 +22,15 @@ class Main extends PluginBase implements Listener {
             if ($result !== null) {
                 switch ($result) {
                     case 0:
-                    $sumbitmsg = $this->getConfig->get("Sumbit-Msg");
+                  
+                    $submitmsg = $this->config()->get("Submit-Msg");
                     $player->sendMessage(self::PREFIX . $sumbitmsg);
                     break;
                 }
             }
         });
-        $formtitle = $this->getConfig->get("Form-Title");
-        $formcontent = $this->getConfig->get("Form-Content");
+        $formtitle = $this->config()->get("Form-Title");
+        $formcontent = $this->config()->get("Form-Content");
         
         $joinform->setTitle($formtitle);
         $joinform->setContent($formcontent);
