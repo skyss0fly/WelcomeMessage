@@ -15,7 +15,7 @@ class Main extends PluginBase implements Listener {
 
  
     public function onPlayerJoin(PlayerJoinEvent $event) {
-    
+       $player = $event->getPlayer();
 
         $joinform = new SimpleForm(function (Player $player, $data){
             $result = $data;
