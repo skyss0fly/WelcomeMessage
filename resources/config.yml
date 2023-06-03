@@ -8,3 +8,5 @@ Message: "&aWelcome to our server, {player}! &cWe hope you enjoy your stay at "
 ServerName: "&cName"
 
 BroadcastToServer: true
+
+formmode: false
