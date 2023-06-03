@@ -22,4 +22,5 @@ Simple on the fly customisable welcome message.
 - RuzBenzy (kinda, just gave like 1 suggestion)
 
 https://poggit.pmmp.io/p/WelcomeMessage
+<p></p>
 ^^ Download the Latest Flavour of WelcomeMessage ^^
