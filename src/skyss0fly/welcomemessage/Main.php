@@ -13,7 +13,20 @@ class Main extends PluginBase implements Listener {
         $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
-
+private function updateConfig() €
+if (file_exists (Sthis->getDatafolder () .
+'config.ym]')) {
+Sthis->saveResource( config.ym]') ;
+return:
+if (Sthis->getConfig()-›get('config-version')!== self:: CONFIG_VERSION) {
+Sconfig_version = $this->getConfig()->get('config-version');
+Sthis->getLogger()->info("Your Config isn't the latest. We renamed your old config to sbconfig-"
+. Sconfig_version . ". ym
+rename (Sthis->getDatafolder () . "config.ymI', Sthis->getDatafolder () . 'config-' . $config_version
+".yml');
+Sthis->saveResource( config.ym]');
+}
+}
     public function onPlayerJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
         $servername = $this->getConfig()->get("ServerName");
