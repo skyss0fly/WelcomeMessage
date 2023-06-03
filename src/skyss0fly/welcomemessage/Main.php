@@ -25,7 +25,7 @@ class Main extends PluginBase implements Listener {
                     case 0:
                   
                     $submitmsg = $this->getConfig()->get("Submit-Msg");
-                    $player->sendMessage($sumbitmsg);
+                    $player->sendMessage($submitmsg);
                     break;
                 }
             }
