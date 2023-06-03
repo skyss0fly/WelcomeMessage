@@ -11,7 +11,7 @@ Simple on the fly customisable welcome message.
 <p><b> - 4</b> join the game </p><p></p>
 
 ### TODO
-- `config->BroadcastToServer: true` if set to false then whisper from console
+- None! You should suggest some features to add!
 
 ## API COMPATIBLE:
 - 5.X.X
