@@ -2,7 +2,9 @@
 
 # Use {player} for the player name
 # Use & for color
-
+# DO NOT EDIT THIS VALUE UNLESS YOU KNOW WHAT YOUR DOING!:
+version: 1
+# ok all safe now
 Prefix: "&l&o&cName"
 Message: "&aWelcome to our server, {player}! &cWe hope you enjoy your stay at "
 ServerName: "&cName"
