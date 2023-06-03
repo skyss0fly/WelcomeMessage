@@ -18,11 +18,17 @@ class Main extends PluginBase implements Listener {
         $servername = $this->getConfig()->get("ServerName");
         $prefix = $this->getConfig()->get("Prefix");
         $message = $this->getConfig()->get("Message");
+        $broadcasttoserver = $this->getConfig()->get("BroadcastToServer");
         $message = str_replace("{player}", $player->getName(), $message);
         $prefix = str_replace("&", "§", $prefix);
         $servername = str_replace("&", "§", $servername);
         $message = str_replace("&", "§", $message);
         $message = $prefix . ": " . $message . $servername;
+if ($broadcasttoserver === true) {
         $this->getServer()->broadcastMessage($message);
+}
+else {
+    $player->sendMessage($message);
+}
     }
 }
