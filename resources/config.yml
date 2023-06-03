@@ -7,4 +7,6 @@ Prefix: "&l&o&cName"
 Message: "&aWelcome to our server, {player}! &cWe hope you enjoy your stay at "
 ServerName: "&cName"
 
-BroadcastToServer: true
+messageoptions: broadcast
+#Default = broadcast
+#list of option values= broadcast, whisper, both
