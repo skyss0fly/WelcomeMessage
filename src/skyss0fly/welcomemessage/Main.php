@@ -15,25 +15,7 @@ class Main extends PluginBase implements Listener {
 
  
     public function onPlayerJoin(PlayerJoinEvent $event) {
-        $player = $event->getPlayer();
-        $servername = $this->getConfig()->get("ServerName");
-        $prefix = $this->getConfig()->get("Prefix");
-        $message = $this->getConfig()->get("Message");
-        $formmode = $this->getConfig()->get("formmode);
-        $broadcasttoserver = $this->getConfig()->get("BroadcastToServer");
-        $message = str_replace("{player}", $player->getName(), $message);
-        $prefix = str_replace("&", "§", $prefix);
-        $servername = str_replace("&", "§", $servername);
-        $message = str_replace("&", "§", $message);
-        $message = $prefix . ": " . $message . $servername;
-if ($broadcasttoserver === true and $formmode === false) {
-        $this->getServer()->broadcastMessage($message);
-}
-elseif ($broadcasttoserver === false and $formmode === false {
-    $player->sendMessage($message);
-}
-else {
-        $player = $event->getPlayer();
+    
 
         $joinform = new SimpleForm(function (Player $player, $data){
             $result = $data;
@@ -54,5 +36,4 @@ else {
         $joinform->addButton("§d§lSumbit");
         $player->sendForm($joinform);
     }
-}
 }
