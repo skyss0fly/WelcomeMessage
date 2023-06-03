@@ -20,3 +20,6 @@ Simple on the fly customisable welcome message.
 - <a href="https://github.com/SOF3">SOFe</a>
 - <a href="https://github.com/Inaay">Inaayat</a>
 - RuzBenzy (kinda, just gave like 1 suggestion)
+
+https://poggit.pmmp.io/p/WelcomeMessage
+^^ Download the Latest Flavour of WelcomeMessage ^^
