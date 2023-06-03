@@ -24,7 +24,9 @@ class Main extends PluginBase implements Listener {
         $servername = str_replace("&", "§", $servername);
         $message = str_replace("&", "§", $message);
         $message = $prefix . ": " . $message . $servername;
-  if $broadcasttoserver 
+if get($broadcasttoserver) === true
         $this->getServer()->broadcastMessage($message);
+else 
+    $this->getServer()->whisper($player, $message);
     }
 }
