@@ -2,5 +2,11 @@ Title: "Welcome to ServerName"
 Content: "Content Here"
 ButtonText: "Close!"
 
+Mode: false
+#true = form
+#false = chat
 
+broadcast = true
+# true = broadcast to chat
+# false = whisper to player
 Ver: 1.9
