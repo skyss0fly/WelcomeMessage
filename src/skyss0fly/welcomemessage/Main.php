@@ -24,6 +24,7 @@ class Main extends PluginBase implements Listener {
 
 $form = new SimpleForm(function(Player $player, $data){
     if($data === null) return;
+  
 });
 $form->setTitle($title);
 $form->setContent($content);
