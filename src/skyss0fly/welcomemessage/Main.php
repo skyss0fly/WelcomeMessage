@@ -17,7 +17,23 @@ class Main extends PluginBase implements Listener {
 
     public function onPlayerJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
-        
+        $servername = $this->getConfig()->get("ServerName");
+        $prefix = $this->getConfig()->get("Prefix");
+        $message = $this->getConfig()->get("Message");
+        $broadcasttoserver = $this->getConfig()->get("Broadcast");
+        $formmode = $this->getConfig()->get("mode")
+        $message = str_replace("{player}", $player->getName(), $message);
+        $prefix = str_replace("&", "§", $prefix);
+        $servername = str_replace("&", "§", $servername);
+        $message = str_replace("&", "§", $message);
+        $message = $prefix . ": " . $message . $servername;
+if ($broadcasttoserver === true and $formmode === false) {
+        $this->getServer()->broadcastMessage($message);
+}
+elseif ($broadcasttoserver === false and $formmode === false) {
+    $player->sendMessage($message);
+}
+else {
  $title = $this->getConfig()->get("Title");
  $content = $this->getConfig()->get("Content");
  $button = $this->getConfig()->get("ButtonText");
@@ -31,5 +47,6 @@ $form->setContent($content);
 $form->addButton($button);
 $player->sendForm($form);
 
+}
 }
 }
