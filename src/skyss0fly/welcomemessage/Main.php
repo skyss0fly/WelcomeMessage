@@ -29,7 +29,6 @@ $form->setTitle($title);
 $form->setContent($content);
 $form->addButton($button);
 $player->sendForm($form);
-```
-Just like this
+
 }
 }
