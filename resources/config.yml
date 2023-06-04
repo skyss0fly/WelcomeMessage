@@ -9,6 +9,7 @@ Mode: false
 Broadcast: true
 # true = broadcast to chat
 # false = whisper to player
+ServerName: "&dName"
 Prefix: "&ePrefix"
 Message: "&amessage"
 
