@@ -25,3 +25,5 @@ Simple on the fly customisable welcome message.
 https://poggit.pmmp.io/p/WelcomeMessage
 <p></p>
 ^^ Download the Latest Flavour of WelcomeMessage ^^
+
+<a href="https://github.com/skyss0fly/WelcomeMessage/blob/main/DOCS/index.md"> Documentation On The Plugin </a>
