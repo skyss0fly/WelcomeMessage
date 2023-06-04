@@ -5,7 +5,7 @@
 > Click <a href="https://github.com/skyss0fly/WelcomeMessage/blob/main/DOCS/1.9.md">Here </a> For Documentation on V1.9 <br>
 
 # Current Versions In Development:
- > V1.9
+ > V1.10
  > > Planned Features:
- > > > Welcome Message In a Form
+ > > > Optional choice To have your welcome message in a form or in chat form
 
