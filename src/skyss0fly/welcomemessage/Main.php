@@ -5,6 +5,8 @@ namespace skyss0fly\welcomemessage;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
+use jojoe77777\FormAPI\SimpleForm;
+use pocketmine\player\Player;
 
 class Main extends PluginBase implements Listener {
 
@@ -15,20 +17,19 @@ class Main extends PluginBase implements Listener {
 
     public function onPlayerJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
-        $servername = $this->getConfig()->get("ServerName");
-        $prefix = $this->getConfig()->get("Prefix");
-        $message = $this->getConfig()->get("Message");
-        $broadcasttoserver = $this->getConfig()->get("BroadcastToServer");
-        $message = str_replace("{player}", $player->getName(), $message);
-        $prefix = str_replace("&", "§", $prefix);
-        $servername = str_replace("&", "§", $servername);
-        $message = str_replace("&", "§", $message);
-        $message = $prefix . ": " . $message . $servername;
-if ($broadcasttoserver === true) {
-        $this->getServer()->broadcastMessage($message);
+        
+ $title = $this->getConfig()->get("Title");
+ $content = $this->getConfig()->get("Content");
+ $button = $this->getConfig()->get("ButtonText");
+
+$form = new SimpleForm(function(Player $player, $data){
+    if($data === null) return;
+  
+});
+$form->setTitle($title);
+$form->setContent($content);
+$form->addButton($button);
+$player->sendForm($form);
+
 }
-else {
-    $player->sendMessage($message);
-}
-    }
 }
