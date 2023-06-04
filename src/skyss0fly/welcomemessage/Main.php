@@ -22,11 +22,11 @@ class Main extends PluginBase implements Listener {
         $message = $this->getConfig()->get("Message");
         $broadcasttoserver = $this->getConfig()->get("Broadcast");
         $formmode = $this->getConfig()->get("Mode")
-        $message = str_replace("{player}", $player->getName(), $message);
+        $msg = str_replace("{player}", $player->getName(), $message);
         $prefix = str_replace("&", "§", $prefix);
         $servername = str_replace("&", "§", $servername);
-        $message = str_replace("&", "§", $message);
-        $message = $prefix . ": " . $message . $servername;
+        $mesg = str_replace("&", "§", $msg);
+        $mesag = $prefix . ": " . $mesg . $servername;
 if ($broadcasttoserver === true and $formmode === false) {
         $this->getServer()->broadcastMessage($message);
 }
