@@ -6,7 +6,11 @@ Mode: false
 #true = form
 #false = chat
 
-broadcast = true
+Broadcast: true
 # true = broadcast to chat
 # false = whisper to player
-Ver: 1.9
+Prefix: "&ePrefix"
+Message: "&amessage"
+
+Ver: 1.10
+
