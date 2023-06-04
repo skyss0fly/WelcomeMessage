@@ -1,12 +1,3 @@
-#config
-
-# Use {player} for the player name
-# Use & for color
-
-## ok all safe
-
-Prefix: "&l&o&cName"
-Message: "&aWelcome to our server, {player}! &cWe hope you enjoy your stay at "
-ServerName: "&cName"
-
-BroadcastToServer: true
+Title: "Welcome to ServerName"
+Content: "Content Here"
+ButtonText: "Close!"
