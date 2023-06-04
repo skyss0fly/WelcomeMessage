@@ -21,6 +21,7 @@ Simple on the fly customisable welcome message.
 - <a href="https://github.com/Inaay">Inaayat</a>
 - RuzBenzy (kinda, just gave like 1 suggestion)
 - <a href="https://github.com/jasonw4331">jasonw4331</a>
+- <a href="https://github.com/AraaCuteUwU">AraaCuteUwU</a>
 
 https://poggit.pmmp.io/p/WelcomeMessage
 <p></p>
