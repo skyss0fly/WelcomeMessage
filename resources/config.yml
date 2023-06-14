@@ -1,4 +1,5 @@
 #config
 Form-Title: "Welcome!"
-Submit-Msg: "Welcome to ServerName_Here, enjoy your stay"
+Submit-Msg: "Submit"
 Form-Content: "Welcome"
+Btn1: "Rules"
