@@ -21,7 +21,7 @@ class Main extends PluginBase implements Listener {
  $title = $this->getConfig()->get("Title");
  $content = $this->getConfig()->get("Content");
  $button = $this->getConfig()->get("ButtonText");
-
+ $btn1 = $this->getConfig()->get("Btn1");
 $form = new SimpleForm(function(Player $player, $data){
     if($data === null) return;
   
@@ -29,6 +29,7 @@ $form = new SimpleForm(function(Player $player, $data){
 $form->setTitle($title);
 $form->setContent($content);
 $form->addButton($button);
+$form->addButton($btn1);
 $player->sendForm($form);
 
 }
