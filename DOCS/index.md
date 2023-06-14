@@ -5,5 +5,6 @@
 > Click <a href="https://github.com/skyss0fly/WelcomeMessage/blob/main/DOCS/1.9.md">Here </a> For Documentation on V1.9 <br>
 
 # Current Versions In Development:
-**None**
+**V1.10**
+introduction of rules tab
 
