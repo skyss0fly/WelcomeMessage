@@ -26,13 +26,14 @@ class Main extends PluginBase implements Listener {
                   
                     $submitmsg = $this->getConfig()->get("Submit-Msg");
                     $player->sendMessage($submitmsg);
+                      
                     break;
                 }
             }
         });
         $formtitle = $this->getConfig()->get("Form-Title");
         $formcontent = $this->getConfig()->get("Form-Content");
-         $btn1 = $this->getConfig()->get("Btn1");
+        $btn1 = $this->getConfig()->get("Btn1");
        
         $joinform->setTitle($formtitle);
         $joinform->setContent($formcontent);
