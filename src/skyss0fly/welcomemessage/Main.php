@@ -42,6 +42,10 @@ class Main extends PluginBase implements Listener {
         $player->sendForm($joinform);
     }
     
+
+public function sendJoinForm(Player $player){
+}
+
         $ruleform = new SimpleForm(function (Player $player, $data){
             $result = $data;
             if ($result !== null) {
