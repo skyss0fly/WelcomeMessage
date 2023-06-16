@@ -41,4 +41,23 @@ class Main extends PluginBase implements Listener {
         $joinform->addButton($btn1);
         $player->sendForm($joinform);
     }
+    
+        $ruleform = new SimpleForm(function (Player $player, $data){
+            $result = $data;
+            if ($result !== null) {
+                switch ($result) {
+                    case 0:
+                  
+                    $submitmsg = $this->getConfig()->get("Submit-Msg");
+                    $player->sendMessage($submitmsg);
+                      
+                    break;
+                }
+            }
+        });
+  $ruleform->setTitle($formtitle);
+        $ruleform->setContent($formcontent);
+        $ruleform->addButton("§d§lSubmit!");
+       
+}
 }
