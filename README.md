@@ -25,3 +25,6 @@ Simple on the fly customisable welcome message.
 https://poggit.pmmp.io/p/WelcomeMessage
 <p></p>
 ^^ Download the Latest Flavour of WelcomeMessage ^^
+
+
+#Note: V1.10 is having complications Updating, may be a while as i need to clean up my plugin
