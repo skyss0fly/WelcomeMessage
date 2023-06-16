@@ -21,6 +21,7 @@ class Main extends PluginBase implements Listener {
         $joinform = new SimpleForm(function (Player $player, $data){
             $result = $data;
             if ($result !== null) {
+                $btn1->sendForm($ruleform);
                 switch ($result) {
                     case 0:
                   
@@ -65,9 +66,7 @@ public function sendJoinForm(Player $player){
         $rulecontent = $this->getConfig()->get("RuleContent");
        
        
-        $ruleform->setTitle($formtitle);
-        $ruleform->setContent($formcontent);
-        $ruleform->addButton("§d§lSubmit!");
+        $ruleform->setTitle("Rules");
         $player->sendForm($ruleform);
   
        
