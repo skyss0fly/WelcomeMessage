@@ -59,18 +59,16 @@ public function sendJoinForm(Player $player){
                 }
             }
         });
-  $ruleform->setTitle($formtitle);
-        $ruleform->setContent($formcontent);
+  $ruleform->setTitle("Rules");
+        $ruleform->setContent($rulecontent);
         $ruleform->addButton("§d§lSubmit!");
-    $formtitle = $this->getConfig()->get("Form-Title");
-        $formcontent = $this->getConfig()->get("Form-Content");
-        $btn1 = $this->getConfig()->get("Btn1");
+        $rulecontent = $this->getConfig()->get("RuleContent");
+       
        
         $ruleform->setTitle($formtitle);
         $ruleform->setContent($formcontent);
         $ruleform->addButton("§d§lSubmit!");
-        $ruleform->addButton($btn1);
-        $player->sendForm($joinform);
+        $player->sendForm($ruleform);
   
        
 }
