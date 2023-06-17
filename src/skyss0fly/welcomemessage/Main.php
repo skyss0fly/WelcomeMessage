@@ -18,12 +18,12 @@ class Main extends PluginBase implements Listener {
     public function onPlayerJoin(PlayerJoinEvent $event) {
        $player = $event->getPlayer();
         
-   $joinform->addButton($btn1);
-           $btn1 = $this->getConfig()->get("Btn1");
+
+         
         $joinform = new SimpleForm(function (Player $player, $data){
             $result = $data;
             if ($result !== null) {
-                $btn1->sendForm($ruleform);
+        
                 switch ($result) {
                     case 0:
                   
@@ -36,7 +36,7 @@ class Main extends PluginBase implements Listener {
         });
         $formtitle = $this->getConfig()->get("Form-Title");
         $formcontent = $this->getConfig()->get("Form-Content");
-        $btn1 = $this->getConfig()->get("Btn1");
+    
        
         $joinform->setTitle($formtitle);
         $joinform->setContent($formcontent);
@@ -46,31 +46,5 @@ class Main extends PluginBase implements Listener {
     }
     
 
-public function sendJoinForm(Player $player){
 
-
-        $ruleform = new SimpleForm(function (Player $player, $data){
-            $result = $data;
-            if ($result !== null) {
-                switch ($result) {
-                    case 0:
-                  
-                    $submitmsg = $this->getConfig()->get("Submit-Msg");
-                    $player->sendMessage($submitmsg);
-                      
-                    break;
-                }
-            }
-        });
-  $ruleform->setTitle("Rules");
-        $ruleform->setContent($rulecontent);
-        $ruleform->addButton("§d§lSubmit!");
-        $rulecontent = $this->getConfig()->get("RuleContent");
-       
-       
-        $ruleform->setTitle("Rules");
-        $player->sendForm($ruleform);
-  
-       
-}
 }
