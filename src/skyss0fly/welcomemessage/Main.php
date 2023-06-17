@@ -41,7 +41,6 @@ class Main extends PluginBase implements Listener {
         $joinform->setTitle($formtitle);
         $joinform->setContent($formcontent);
         $joinform->addButton("§d§lSubmit!");
-        $joinform->addButton($btn1);
         $player->sendForm($joinform);
     }
     
