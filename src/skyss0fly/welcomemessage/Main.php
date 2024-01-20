@@ -61,7 +61,7 @@ if ($msg->str_contains("{player}")) {
       }
       else {
 $this->getLogger()->error("An Error Has Occurred within the configuration of This Plugin, 'LeaveMessageEnabled has an invalid bool Value' To protect your server from corruption, this Plugin Will Disable itself ");
-          $this->getServer()->getPluginManager()->disable($this);
+          $this->getServer()->getPluginManager()->disablePlugin($this);
       }
 }
 
