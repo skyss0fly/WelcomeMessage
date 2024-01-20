@@ -48,7 +48,7 @@ class Main extends PluginBase implements Listener {
        $player = $event->getPlayer();
       $msg = $this->getConfig()->get("LeaveMessage");
             $deactivate = $this->getConfig()->get("LeaveMessageEnabled");
-      if ($deactivate == "false") {
+      if ($deactivate == "true") {
 if ($msg->str_contains("{player}")) {
 
     $leavemsg = str_replace("{player}" , $player->getName(), $msg);
@@ -56,7 +56,7 @@ if ($msg->str_contains("{player}")) {
 
     $this->getServer()->broadcastMessage($leavemsg);
     }
-      elseif ($deactivate == "true") {
+      elseif ($deactivate == "false") {
           # Nothing
       }
       else {
