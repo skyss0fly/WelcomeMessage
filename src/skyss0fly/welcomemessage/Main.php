@@ -9,6 +9,9 @@ use skyss0fly\welcomemessage\Form\{Form, SimpleForm};
 use pocketmine\player\Player;
 
 class Main extends PluginBase implements Listener {
+public const leavemessage = "";
+    private $leavemessage;
+    
     public function onEnable(): void {
         $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
