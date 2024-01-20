@@ -4,7 +4,7 @@ namespace skyss0fly\welcomemessage;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use pocketmine\event\player\{PlayerJoinEvent, PlayerLeaveEvent};
+use pocketmine\event\player\{PlayerJoinEvent, PlayerQuitEvent};
 use skyss0fly\welcomemessage\Form\{Form, SimpleForm};
 use pocketmine\player\Player;
 
@@ -44,7 +44,7 @@ class Main extends PluginBase implements Listener {
         $player->sendForm($joinform);
     }
     
-  public function onPlayerLeave(PlayerLeaveEvent $event) {
+  public function onPlayerLeave(PlayerQuitEvent $event) {
        $player = $event->getPlayer();
       $msg = $this->getConfig()->get("LeaveMessage");
             $deactivate = $this->getConfig()->get("LeaveMessageEnabled");
