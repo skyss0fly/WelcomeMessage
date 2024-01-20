@@ -4,7 +4,7 @@ namespace skyss0fly\welcomemessage;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\event\player\{PlayerJoinEvent, PlayerLeaveEvent};
 use skyss0fly\welcomemessage\Form\{Form, SimpleForm};
 use pocketmine\player\Player;
 
@@ -44,6 +44,25 @@ class Main extends PluginBase implements Listener {
         $player->sendForm($joinform);
     }
     
+  public function onPlayerLeave(PlayerLeaveEvent $event) {
+       $player = $event->getPlayer();
+      $msg = $this->getConfig()->get("LeaveMessage");
+            $deactivate = $this->getConfig()->get("LeaveMessageEnabled");
+      if ($deactivate == "false") {
+if ($msg->str_contains("{player}")) {
 
+    $leavemsg = str_replace("{player}" , $player->getName(), $msg);
+}
+
+    $this->getServer()->broadcastMessage($leavemsg);
+    }
+      elseif ($deactivate == "true") {
+          # Nothing
+      }
+      else {
+$this->getLogger()->error("An Error Has Occurred within the configuration of This Plugin, 'LeaveMessageEnabled has an invalid bool Value' To protect your server from corruption, this Plugin Will Disable itself ");
+          $this->getServer()->getPluginManager()->disable($this);
+      }
+}
 
 }
