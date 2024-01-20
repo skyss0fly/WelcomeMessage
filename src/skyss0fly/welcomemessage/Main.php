@@ -9,8 +9,7 @@ use skyss0fly\welcomemessage\Form\{Form, SimpleForm};
 use pocketmine\player\Player;
 
 class Main extends PluginBase implements Listener {
-public const leavemessage = "";
-    private $leavemessage;
+
     
     public function onEnable(): void {
         $this->saveDefaultConfig();
@@ -48,6 +47,7 @@ public const leavemessage = "";
     }
     
   public function onPlayerLeave(PlayerQuitEvent $event) {
+      $leavemsg = "";
        $player = $event->getPlayer();
       $msg = $this->getConfig()->get("LeaveMessage");
             $deactivate = $this->getConfig()->get("LeaveMessageEnabled");
