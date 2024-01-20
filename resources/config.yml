@@ -3,3 +3,10 @@ Form-Title: "Welcome!"
 Submit-Msg: "Submit"
 Form-Content: "Welcome"
 Btn1: "Rules"
+
+# Leave Message Values:
+# {player} - gives player name
+
+LeaveMessage: "{player} Has left the server"
+
+LeaveMessageEnabled: true
