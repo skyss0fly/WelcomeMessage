@@ -35,10 +35,17 @@ class Main extends PluginBase implements Listener {
             $joinForm->addButton("§d§lSubmit!");
             $player->sendForm($joinForm);
         } else {
+            if ($config->get("Whisper") === false){
             $rawMessage = $config->get("JoinMessage");
             $message = str_replace("{player}", $player->getName(), $rawMessage);
             $this->getServer()->broadcastMessage($message);
         }
+    }
+        else {
+            $rawMessage = $config->get("JoinMessage");
+            $message = str_replace("{player}", $player->getName(), $rawMessage);
+            $player->sendMessage($message);
+            
     }
 
     public function onPlayerLeave(PlayerQuitEvent $event): void {
