@@ -5,7 +5,7 @@ namespace skyss0fly\WelcomeMessage;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\{PlayerJoinEvent, PlayerQuitEvent};
-use skyss0fly\welcomemessage\Form\{Form, SimpleForm};
+use skyss0fly\WelcomeMessage\Form\{Form, SimpleForm};
 use pocketmine\player\Player;
 
 class Main extends PluginBase implements Listener {
