@@ -15,6 +15,7 @@ Simple on the fly customisable welcome message.
 
 ## API COMPATIBLE:
 - 5.X.X
+  **Note: Support for API 4.0.0 - 4.25.6 has Been Ended.**
 
  # thanks to the following for helping me construct this plugin:
 - <a href="https://github.com/SOF3">SOFe</a>
