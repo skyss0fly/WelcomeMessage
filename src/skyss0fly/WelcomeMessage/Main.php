@@ -32,13 +32,13 @@ class Main extends PluginBase implements Listener {
                 }
             }
         });
+        
         $formtitle = $this->getConfig()->get("Form-Title");
         $formcontent = $this->getConfig()->get("Form-Content");   
         $joinform->setTitle($formtitle);
         $joinform->setContent($formcontent);
         $joinform->addButton("§d§lSubmit!");
-        $player->sendForm($joinform);
-    }
+        $player->sendForm($joinform);  
 } else {
     $rawmessage = $this->config()->get("JoinMessage");
     if ($rawmessage->str_contains("{player}")) {
