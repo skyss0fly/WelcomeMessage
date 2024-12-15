@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace skyss0fly\welcomemessage\Form;
+namespace skyss0fly\WelcomeMessage\Form;
 
 class SimpleForm extends Form {
 

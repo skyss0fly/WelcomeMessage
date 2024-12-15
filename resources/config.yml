@@ -4,6 +4,13 @@ Submit-Msg: "Submit"
 Form-Content: "Welcome"
 Btn1: "Rules"
 
+UseFormInsteadOfChat: true
+# set to false if you want to use chat instead of form as welcoming..
+
+JoinMessage: "{player} Welcome to the Server"
+# if the UseFormInsteadOfChat is false then this will show instead of form
+
+
 # Leave Message Values:
 # {player} - gives player name
 

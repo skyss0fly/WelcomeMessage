@@ -1,5 +1,4 @@
 # WelcomeMessage
-## Note: V1.10 is having complications Updating, may be a while as i need to clean up my plugin and take a break for a bit. its stressful
 Simple on the fly customisable welcome message.
 <p align="center">
 <img src="https://github.com/skyss0fly/WelcomeMessage/blob/main/Icon.png"></img>
