@@ -6,7 +6,7 @@ Btn1: "Rules"
 
 UseFormInsteadOfChat: true
 # set to false if you want to use chat instead of form as welcoming..
-IsWhispered: false
+Whisper: false
 # if true and UseFormInsteadOfChat is true then instead of broadcasting the message, it will be whispered to the player
 JoinMessage: "{player} Welcome to the Server"
 # if the UseFormInsteadOfChat is false then this will show instead of form
