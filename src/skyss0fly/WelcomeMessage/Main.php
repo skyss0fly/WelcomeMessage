@@ -10,7 +10,7 @@ use pocketmine\player\Player;
 
 class Main extends PluginBase implements Listener {
 
-    private $config:
+    private $config;
     
     public function onEnable(): void {
         $this->config() = $this->getServer()->getConfig();
