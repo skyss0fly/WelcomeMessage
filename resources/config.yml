@@ -4,6 +4,9 @@ Submit-Msg: "Submit"
 Form-Content: "Welcome"
 Btn1: "Rules"
 
+UseFormInsteadOfChat: true
+# set to false if you want to use chat instead of form as welcoming..
+
 # Leave Message Values:
 # {player} - gives player name
 
