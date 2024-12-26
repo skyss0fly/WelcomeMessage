@@ -23,3 +23,7 @@ LeaveMessageEnabled: true
 UseBedrockEconomy: true
 DailyAmount: 1000
 # Every Join gets you 1000 Cash?
+
+# Do Not touch this:
+Cooldown: 1728000
+# This is How Many Ticks in a Real Life Day
