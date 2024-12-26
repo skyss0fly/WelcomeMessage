@@ -10,15 +10,25 @@ use pocketmine\player\Player;
 
 class Main extends PluginBase implements Listener {
 
+    private $cooldown;
+    
     public function onEnable(): void {
         $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
+        $this->cooldown = $this->getConfig()->get("Cooldown");
+        // Initialise Daily Cooldown
     }
-
+    
     public function onPlayerJoin(PlayerJoinEvent $event): void {
         $player = $event->getPlayer();
         $config = $this->getConfig();
-
+$currentTime = time();
+                if (isset($this->cooldowns[$player_name]) && $this->cooldowns[$player_name] > $currentTime && !$sender->hasPermission("WelcomeMessage.cooldownbypass")) {
+                    $remainingTime = $this->cooldowns[$player_name] - $currentTime;
+                    
+                    return false;
+                    
+                } else {
         if ($config->get("UseFormInsteadOfChat") === true) {
             $joinForm = new SimpleForm(function (Player $player, $data) {
                 if ($data !== null) {
@@ -46,6 +56,8 @@ class Main extends PluginBase implements Listener {
             $message = str_replace("{player}", $player->getName(), $rawMessage);
             $player->sendMessage($message);
             
+    }
+                }
     }
 
     public function onPlayerLeave(PlayerQuitEvent $event): void {
