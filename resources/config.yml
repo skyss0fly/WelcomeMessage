@@ -18,3 +18,8 @@ JoinMessage: "{player} Welcome to the Server"
 LeaveMessage: "{player} Has left the server"
 
 LeaveMessageEnabled: true
+
+
+UseBedrockEconomy: true
+DailyAmount: 1000
+# Every Join gets you 1000 Cash?
