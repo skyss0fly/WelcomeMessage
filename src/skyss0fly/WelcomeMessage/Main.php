@@ -40,7 +40,7 @@ class Main extends PluginBase implements Listener {
             $newMessage = str_replace("{server}", $this->getServer()->getName(), $message);
             $this->getServer()->broadcastMessage($newMessage);
         } else {
-            $rawMessage = $config->get("JoinMessage");
+            $rawMessage = $config->get("WelcomeMessage");
             $message = str_replace("{player}", $player->getName(), $rawMessage);
             $this->getServer()->broadcastMessage($message);
         }
