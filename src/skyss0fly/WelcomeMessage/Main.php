@@ -36,8 +36,8 @@ $currentTime = time();
                 } else {
                     BedrockEconomyAPI::CLOSURE()->add(
     xuid: $xuid,
-    username: $player->getNameExact(); ,
-    amount: $this->getConfig()->get("Amount"); ,
+    username: $player->getNameExact(),
+    amount: $this->getConfig()->get("Amount"),
     decimals: 0,
     onSuccess: static function (): void {
         echo 'Balance updated successfully.';
