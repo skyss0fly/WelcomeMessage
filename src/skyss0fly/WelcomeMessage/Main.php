@@ -34,6 +34,11 @@ class Main extends PluginBase implements Listener {
             $joinForm->setContent($formContent);
             $joinForm->addButton("§d§lSubmit!");
             $player->sendForm($joinForm);
+        } elseif ($hasPlayedBefore === true) {
+            $rawMessage = $config->get("JoinMessage");
+            $message = str_replace("{player}", $player->getName(), $rawMessage);
+            $newMessage = str_replace("{server}", $this->getServer()->getName(), $message);
+            $this->getServer()->broadcastMessage($newMessage);
         } else {
             $rawMessage = $config->get("JoinMessage");
             $message = str_replace("{player}", $player->getName(), $rawMessage);
