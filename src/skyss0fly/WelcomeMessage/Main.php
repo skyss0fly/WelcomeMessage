@@ -7,6 +7,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\{PlayerJoinEvent, PlayerQuitEvent};
 use skyss0fly\WelcomeMessage\Form\{Form, SimpleForm};
 use pocketmine\player\Player;
+use cooldogepm\BedrockEconomy\api\BedrockEconomyAPI;
 
 class Main extends PluginBase implements Listener {
 
@@ -21,7 +22,11 @@ class Main extends PluginBase implements Listener {
     
     public function onPlayerJoin(PlayerJoinEvent $event): void {
         $player = $event->getPlayer();
+        $xuid = $player->getXuid();
+        // Returns Empty if Player is not Logged into Xbox Auth.
+        
         $config = $this->getConfig();
+ //       if ($config->get("UseBedrockEconomy") === true) {
 $currentTime = time();
                 if (isset($this->cooldowns[$player_name]) && $this->cooldowns[$player_name] > $currentTime && !$sender->hasPermission("WelcomeMessage.cooldownbypass")) {
                     $remainingTime = $this->cooldowns[$player_name] - $currentTime;
@@ -29,6 +34,24 @@ $currentTime = time();
                     return false;
                     
                 } else {
+                    BedrockEconomyAPI::CLOSURE()->add(
+    xuid: $xuid,
+    username: $player->getNameExact(); ,
+    amount: $this->getConfig()->get("Amount"); ,
+    decimals: 0,
+    onSuccess: static function (): void {
+        echo 'Balance updated successfully.';
+    },
+    onError: static function (SQLException $exception): void {
+        if ($exception instanceof RecordNotFoundException) {
+            echo 'Account not found';
+            return;
+        }
+
+        echo 'An error occurred while updating the balance.';
+    }
+);
+
         if ($config->get("UseFormInsteadOfChat") === true) {
             $joinForm = new SimpleForm(function (Player $player, $data) {
                 if ($data !== null) {
