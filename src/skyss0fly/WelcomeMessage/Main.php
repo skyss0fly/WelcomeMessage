@@ -16,6 +16,7 @@ class Main extends PluginBase implements Listener {
     }
 
     public function onPlayerJoin(PlayerJoinEvent $event): void {
+        $hasPlayedBefore = $event->getPlayer()->hasPlayedBefore();
         $player = $event->getPlayer();
         $config = $this->getConfig();
 
