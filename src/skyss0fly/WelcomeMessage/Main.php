@@ -49,7 +49,8 @@ class Main extends PluginBase implements Listener {
         if ($leaveMessageEnabled === true) {
             $rawMessage = $config->get("LeaveMessage");
             $message = str_replace("{player}", $player->getName(), $rawMessage);
-            $this->getServer()->broadcastMessage($message);
+            $newMessage = str_replace("{server}", $this->getServer()->getName(), $message);
+            $this->getServer()->broadcastMessage($newMessage);
         } elseif ($leaveMessageEnabled === false) {
             // No action required
         } else {
