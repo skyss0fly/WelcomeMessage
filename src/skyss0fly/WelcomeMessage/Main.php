@@ -23,7 +23,9 @@ class Main extends PluginBase implements Listener {
             $joinForm = new SimpleForm(function (Player $player, $data) {
                 if ($data !== null) {
                     $submitMessage = $this->getConfig()->get("Submit-Msg");
-                    $player->sendMessage($submitMessage);
+                    $message = str_replace("{player}", $player->getName(), $submitMessage);
+                    $NewMessage = str_replace("{server}", $this->getServer()->getName(), $message);
+                    $player->sendMessage($NewMessage);
                 }
             });
 
