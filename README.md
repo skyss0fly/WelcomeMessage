@@ -17,6 +17,7 @@ Simple on the fly customisable welcome message.
 - 5.X.X
 
  # thanks to the following for helping me construct this plugin:
+- <a href="https://github.com/Zalgo-Dev">ZalgoDev</a>
 - <a href="https://github.com/SOF3">SOFe</a>
 - <a href="https://github.com/Inaay">Inaayat</a>
 - RuzBenzy (kinda, just gave like 1 suggestion)
