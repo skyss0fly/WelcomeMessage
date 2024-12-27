@@ -5,5 +5,5 @@ branches:
 projects:
   WelcomeMessage:
     path: ""
-    icon: "Icon.png"
+    icon: "Icon.webp"
 ...
