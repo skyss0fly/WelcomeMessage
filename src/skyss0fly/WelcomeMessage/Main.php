@@ -31,7 +31,7 @@ $currentTime = time();
                 if (isset($this->cooldowns[$player_name]) && $this->cooldowns[$player_name] > $currentTime && !$sender->hasPermission("WelcomeMessage.cooldownbypass")) {
                     $remainingTime = $this->cooldowns[$player_name] - $currentTime;
                     
-                    return false;
+                    return;
                     
                 } else {
                     BedrockEconomyAPI::CLOSURE()->add(
