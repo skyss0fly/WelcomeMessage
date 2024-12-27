@@ -42,7 +42,8 @@ class Main extends PluginBase implements Listener {
         } else {
             $rawMessage = $config->get("WelcomeMessage");
             $message = str_replace("{player}", $player->getName(), $rawMessage);
-            $this->getServer()->broadcastMessage($message);
+            $newMessage = str_replace("{server}", $this->getServer()->getName(), $message);
+            $this->getServer()->broadcastMessage($newMessage);
         }
     }
 
