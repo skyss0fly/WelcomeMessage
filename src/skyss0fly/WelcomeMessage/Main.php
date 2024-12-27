@@ -73,16 +73,15 @@ $currentTime = time();
             $message = str_replace("{player}", $player->getName(), $rawMessage);
             $this->getServer()->broadcastMessage($message);
         }
-    }
-        else {
+            else {
             $rawMessage = $config->get("JoinMessage");
             $message = str_replace("{player}", $player->getName(), $rawMessage);
             $player->sendMessage($message);
             
     }
+        }
                 }
     }
-
     public function onPlayerLeave(PlayerQuitEvent $event): void {
         $player = $event->getPlayer();
         $config = $this->getConfig();
