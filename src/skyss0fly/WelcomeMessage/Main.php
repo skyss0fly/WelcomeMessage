@@ -52,7 +52,7 @@ class Main extends PluginBase implements Listener {
             $newMessage = str_replace("{server}", $this->getServer()->getName(), $message);
             $this->getServer()->broadcastMessage($newMessage);
         } elseif ($leaveMessageEnabled === false) {
-            // No action required
+            return;
         } else {
             $this->getLogger()->error("Invalid value for 'LeaveMessageEnabled'. Disabling plugin to protect the server.");
             $this->getServer()->getPluginManager()->disablePlugin($this);
