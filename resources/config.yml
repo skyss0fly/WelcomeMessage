@@ -23,7 +23,7 @@ JoinMessage: "{player} is back! Have fun on {server}!"
 
 # Leave Message Values:
 # {player} - gives player name
-
-LeaveMessage: "{player} Has left the server"
+# {server} - gives server name
+LeaveMessage: "{player} Has left {server}"
 
 LeaveMessageEnabled: true
