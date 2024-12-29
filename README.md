@@ -1,5 +1,7 @@
 # WelcomeMessage
 Simple on the fly customisable welcome message.
+> [!Note]
+> This Branch of WelcomeMessage is for [BetterAltay](https://github.com/Benedikt05)
 <p align="center">
 <img src="https://github.com/skyss0fly/WelcomeMessage/blob/main/Icon.png"></img>
 </p> <p></p>
