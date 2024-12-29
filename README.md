@@ -16,17 +16,11 @@ Simple on the fly customisable welcome message.
 - None! You should suggest some features to add!
 
 ## API COMPATIBLE:
-- 5.X.X
+BetterAltay API 1.27^
 
  # thanks to the following for helping me construct this plugin:
 - <a href="https://github.com/SOF3">SOFe</a>
 - <a href="https://github.com/Inaay">Inaayat</a>
 - RuzBenzy (kinda, just gave like 1 suggestion)
 - <a href="https://github.com/jasonw4331">jasonw4331</a>
-
-https://poggit.pmmp.io/p/WelcomeMessage
-<p></p>
-^^ Download the Latest Flavour of WelcomeMessage ^^
-
-
 
