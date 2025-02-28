@@ -6,7 +6,7 @@
  Click <a href="https://github.com/skyss0fly/WelcomeMessage/blob/main/DOCS/1.21.md">Here </a> For Documentation on V1.21 <br>
 
 # Current Versions In Development:
-**V1.10**
+**V1.22**
 introduction of rules tab
 
 # Development Has Been slowed due to me no longer having as much time to develop.
