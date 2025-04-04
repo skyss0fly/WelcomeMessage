@@ -16,6 +16,7 @@ class Main extends PluginBase implements Listener {
     }
 
     public function onPlayerJoin(PlayerJoinEvent $event): void {
+        $hasPlayedBefore = $event->getPlayer()->hasPlayedBefore();
         $player = $event->getPlayer();
         $config = $this->getConfig();
 
@@ -23,7 +24,9 @@ class Main extends PluginBase implements Listener {
             $joinForm = new SimpleForm(function (Player $player, $data) {
                 if ($data !== null) {
                     $submitMessage = $this->getConfig()->get("Submit-Msg");
-                    $player->sendMessage($submitMessage);
+                    $message = str_replace("{player}", $player->getName(), $submitMessage);
+                    $NewMessage = str_replace("{server}", $this->getServer()->getName(), $message);
+                    $player->sendMessage($NewMessage);
                 }
             });
 
@@ -34,10 +37,16 @@ class Main extends PluginBase implements Listener {
             $joinForm->setContent($formContent);
             $joinForm->addButton("§d§lSubmit!");
             $player->sendForm($joinForm);
-        } else {
+        } elseif ($hasPlayedBefore === true) {
             $rawMessage = $config->get("JoinMessage");
             $message = str_replace("{player}", $player->getName(), $rawMessage);
-            $this->getServer()->broadcastMessage($message);
+            $newMessage = str_replace("{server}", $this->getServer()->getName(), $message);
+            $this->getServer()->broadcastMessage($newMessage);
+        } else {
+            $rawMessage = $config->get("WelcomeMessage");
+            $message = str_replace("{player}", $player->getName(), $rawMessage);
+            $newMessage = str_replace("{server}", $this->getServer()->getName(), $message);
+            $this->getServer()->broadcastMessage($newMessage);
         }
     }
 
@@ -49,9 +58,10 @@ class Main extends PluginBase implements Listener {
         if ($leaveMessageEnabled === true) {
             $rawMessage = $config->get("LeaveMessage");
             $message = str_replace("{player}", $player->getName(), $rawMessage);
-            $this->getServer()->broadcastMessage($message);
+            $newMessage = str_replace("{server}", $this->getServer()->getName(), $message);
+            $this->getServer()->broadcastMessage($newMessage);
         } elseif ($leaveMessageEnabled === false) {
-            // No action required
+            return;
         } else {
             $this->getLogger()->error("Invalid value for 'LeaveMessageEnabled'. Disabling plugin to protect the server.");
             $this->getServer()->getPluginManager()->disablePlugin($this);
